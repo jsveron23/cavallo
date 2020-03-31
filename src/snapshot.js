@@ -23,22 +23,22 @@ const SNAPSHOT_MAP = {
 }
 
 /**
- * Initial snapshot
- * @param  {String} side
+ * Get initial snapshot
+ * @param  {String} str side or turn
  * @return {Array}
  */
-function snapshot (side) {
-  if (isNil(side)) {
-    throw new Error('[side] is not defined')
+function getSnapshot (str) {
+  if (isNil(str)) {
+    throw new Error('undefined argument')
   }
 
-  const snapshot = SNAPSHOT_MAP[side]
+  const snapshot = SNAPSHOT_MAP[str]
 
   if (isNil(snapshot)) {
-    throw new Error('[side] is invalid')
+    throw new Error('invalid string is provided')
   }
 
   return snapshot
 }
 
-export default snapshot
+export default getSnapshot
