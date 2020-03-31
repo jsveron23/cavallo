@@ -1,1 +1,3 @@
-console.log('Hello World!')
+import snapshot from './snapshot'
+
+export { snapshot }
