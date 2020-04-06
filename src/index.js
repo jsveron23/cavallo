@@ -1,2 +1,2 @@
-export { default as getSnapshot } from './snapshot'
-export { default as getSide } from './side'
+export { getSnapshot } from './snapshot'
+export { getSide, getTurn, getOpponent } from './side'

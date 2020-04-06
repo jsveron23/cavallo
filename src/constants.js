@@ -12,6 +12,13 @@ export const TURN = {
   b: 'black'
 }
 
+export const OPPONENT = {
+  white: 'black',
+  black: 'white',
+  w: 'black',
+  b: 'white'
+}
+
 export const SNAPSHOT_WHITE = [
   'wPa2', 'wPb2', 'wPc2', 'wPd2', 'wPe2', 'wPf2', 'wPg2', 'wPh2',
   'wRa1', 'wNb1', 'wBc1', 'wQd1', 'wKe1', 'wBf1', 'wNg1', 'wRh1'

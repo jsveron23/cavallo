@@ -16,7 +16,7 @@ const SNAPSHOT_MAP = {
  * @param  {String} text side or turn
  * @return {Array}
  */
-function getSnapshot (text) {
+export function getSnapshot (text) {
   if (isNil(text)) {
     throw new Error('undefined argument')
   }
@@ -29,5 +29,3 @@ function getSnapshot (text) {
 
   return snapshot
 }
-
-export default getSnapshot

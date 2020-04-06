@@ -38,3 +38,22 @@ export function getTurn (text) {
 
   return turn
 }
+
+/**
+ * Get Opponent
+ * @param  {String} text side or turn
+ * @return {String} side, 1 character
+ */
+export function getOpponent (text) {
+  if (isNil(text)) {
+    throw new Error('Argument is undefined.')
+  }
+
+  const opponent = TURN[text]
+
+  if (isNil(opponent)) {
+    throw new Error('`opponent` is invalid.')
+  }
+
+  return opponent
+}
