@@ -1,3 +1,15 @@
+/**
+ * Columns
+ * @type {Array}
+ */
+export const FILES = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+
+/**
+ * Rows
+ * @type {Array}
+ */
+export const RANKS = ['8', '7', '6', '5', '4', '3', '2', '1']
+
 export const SIDE = {
   white: 'w',
   black: 'b',
@@ -18,6 +30,10 @@ export const OPPONENT = {
   w: 'black',
   b: 'white'
 }
+
+export const DARK_TILES = ['b', 'd', 'f', 'h']
+
+export const LIGHT_TILES = ['a', 'c', 'e', 'g']
 
 export const SNAPSHOT_WHITE = [
   'wPa2', 'wPb2', 'wPc2', 'wPd2', 'wPe2', 'wPf2', 'wPg2', 'wPh2',
