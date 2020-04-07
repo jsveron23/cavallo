@@ -1,2 +1,3 @@
-export { getSnapshot } from './snapshot'
-export { getSide, getTurn, getOpponent } from './side'
+export { getSnapshot } from './generic/snapshot'
+export { getSide, getTurn, getOpponent } from './generic/side'
+export { getSpecial } from './generic/movement'
