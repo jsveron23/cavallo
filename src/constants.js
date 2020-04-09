@@ -39,8 +39,8 @@ export const TURN = {
 export const OPPONENT = {
   white: 'black',
   black: 'white',
-  w: 'black',
-  b: 'white'
+  w: 'b',
+  b: 'w'
 }
 
 /**

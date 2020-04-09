@@ -1,10 +1,10 @@
 import { isNil } from 'ramda'
-import { SIDE, TURN } from './constants'
+import { SIDE, TURN, OPPONENT } from './constants'
 
 /**
  * Get side
  * @param  {String} text side or turn
- * @return {String} side, 1 character
+ * @return {String}
  */
 export function getSide (text) {
   if (isNil(text)) {
@@ -23,7 +23,7 @@ export function getSide (text) {
 /**
  * Get turn
  * @param  {String} text side or turn
- * @return {String} side, 1 character
+ * @return {String}
  */
 export function getTurn (text) {
   if (isNil(text)) {
@@ -42,14 +42,14 @@ export function getTurn (text) {
 /**
  * Get Opponent
  * @param  {String} text side or turn
- * @return {String} side, 1 character
+ * @return {String}
  */
 export function getOpponent (text) {
   if (isNil(text)) {
     throw new Error('Argument is undefined.')
   }
 
-  const opponent = TURN[text]
+  const opponent = OPPONENT[text]
 
   if (isNil(opponent)) {
     throw new Error('`opponent` is invalid.')
