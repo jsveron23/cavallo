@@ -1,5 +1,5 @@
 import { isNil } from 'ramda'
-import { SIDE, TURN } from '../constants'
+import { SIDE, TURN } from './constants'
 
 /**
  * Get side

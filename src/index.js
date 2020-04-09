@@ -1,4 +1,4 @@
-export { getSnapshot } from './generic/snapshot'
-export { getSide, getTurn, getOpponent } from './generic/side'
-export { getSpecial } from './generic/movement'
-export { getFile } from './generic/diagram'
+export { getSnapshot } from './snapshot'
+export { getSide, getTurn, getOpponent } from './side'
+export { getSpecial } from './movement'
+export { getFile } from './diagram'

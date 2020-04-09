@@ -1,5 +1,5 @@
 import { isNil } from 'ramda'
-import { SNAPSHOT_WHITE, SNAPSHOT_BLACK } from '../constants'
+import { SNAPSHOT_WHITE, SNAPSHOT_BLACK } from './constants'
 
 const FOR_WHITE = [...SNAPSHOT_BLACK, ...SNAPSHOT_WHITE]
 const FOR_BLACK = [...SNAPSHOT_WHITE, ...SNAPSHOT_BLACK]
