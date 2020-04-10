@@ -1,7 +1,20 @@
-import { SPECIALS } from './constants'
+import { MOVEMENTS, SPECIALS } from './constants'
 
 /**
- * Get special
+ * Get normal movement
+ * @param  {String} piece uppercase
+ * @return {Array}
+ */
+export function getMovement (piece) {
+  if (typeof piece !== 'string') {
+    throw new Error('invalid piece type')
+  }
+
+  return MOVEMENTS[piece.toUpperCase()] || []
+}
+
+/**
+ * Get special movement
  * @param  {String} piece
  * @return {Array}
  */
