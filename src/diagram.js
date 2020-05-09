@@ -1,3 +1,4 @@
+import { genericError } from 'thrown'
 import { FILES } from './constants'
 
 /**
@@ -7,7 +8,7 @@ import { FILES } from './constants'
  */
 export function getFile (fileNum) {
   if (typeof fileNum !== 'number') {
-    throw new Error('invalid type')
+    throw genericError.create('getFile >')('invalid type', { fileNum })
   }
 
   return FILES[fileNum - 1] || ''

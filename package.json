@@ -1,5 +1,5 @@
 {
-  "name": "js-chess-lib",
+  "name": "cavallo",
   "version": "0.1.0",
   "description": "Javascript Chess library",
   "main": "lib/index.js",
@@ -13,12 +13,13 @@
   "keywords": [
     "chess",
     "chess-lib",
-    "library"
+    "library",
+    "cavallo"
   ],
   "author": "Tony Jin <jsveron23@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsveron23/chess-lib"
+    "url": "https://github.com/jsveron23/cavallo"
   },
   "license": "MIT",
   "devDependencies": {
@@ -43,6 +44,7 @@
     "rollup-plugin-terser": "^5.3.0"
   },
   "dependencies": {
-    "ramda": "^0.27.0"
+    "ramda": "^0.27.0",
+    "thrown": "^0.9.0"
   }
 }

@@ -1,3 +1,4 @@
+import { genericError } from 'thrown'
 import { MOVEMENTS, SPECIALS } from './constants'
 
 /**
@@ -7,7 +8,7 @@ import { MOVEMENTS, SPECIALS } from './constants'
  */
 export function getMovement (piece) {
   if (typeof piece !== 'string') {
-    throw new Error('invalid piece type')
+    throw genericError.create('getMovement >')('invalid type', { piece })
   }
 
   return MOVEMENTS[piece.toUpperCase()] || []
@@ -20,7 +21,7 @@ export function getMovement (piece) {
  */
 export function getSpecial (piece) {
   if (typeof piece !== 'string') {
-    throw new Error('invalid piece type')
+    throw genericError.create('getSpecial >')('invalid type', { piece })
   }
 
   return SPECIALS[piece.toUpperCase()] || []

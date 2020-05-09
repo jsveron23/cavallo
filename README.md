@@ -1,9 +1,11 @@
-# Javascript Chess Library
+# cavallo
+
+- cavallo **Italian** (knight **English**)
 
 Chess library for Javascript.
 
 ```js
-npm i js-chess-lib
+npm i cavallo
 ```
 
 ## React-Chess

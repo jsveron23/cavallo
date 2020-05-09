@@ -1,3 +1,4 @@
+import { genericError } from 'thrown'
 import { isNil } from 'ramda'
 import { SNAPSHOT_WHITE, SNAPSHOT_BLACK } from './constants'
 
@@ -18,13 +19,16 @@ const SNAPSHOT_MAP = {
  */
 export function getSnapshot (text) {
   if (isNil(text)) {
-    throw new Error('undefined argument')
+    throw genericError.create('getSnapshot >')('undefined argument', { text })
   }
 
   const snapshot = SNAPSHOT_MAP[text]
 
   if (isNil(snapshot)) {
-    throw new Error('invalid string is provided')
+    throw genericError.create('getSnapshot >')('invalid string is provided', {
+      text,
+      snapshot
+    })
   }
 
   return snapshot
