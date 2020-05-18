@@ -1,16 +1,21 @@
 # cavallo
 
+Chess library for Javascript
+
 - cavallo **Italian** (knight **English**)
 
-Chess library for Javascript.
+**Why `cavallo`?**
+
+I am afraid to be attacked by `Knight` and also, I love using `Knight` when playing Chess. Anyway, I am not good at Chess. 🥺  
 
 ```js
 npm i cavallo
 ```
 
-## React-Chess
+## Example
 
-That is a Chess game I develop with this library. [React-Chess](https://github.com/jsveron23/react-chess).
+- https://react-chess.app/
+- https://github.com/jsveron23/react-chess
 
 ## License
 
