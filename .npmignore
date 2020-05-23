@@ -1,0 +1,9 @@
+.DS_Store
+src/
+test/
+.eslintrc.js
+.prettierignore
+.prettierrc.json
+ava.config.js
+babel.config.js
+rollup.config.js
